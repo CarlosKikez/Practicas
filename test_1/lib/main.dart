@@ -12,17 +12,14 @@ class Screen1 extends StatelessWidget {
         ),
         body: Center(
           child: Container(
-            margin: EdgeInsets.all(10),
+            margin: EdgeInsets.all(5),
             decoration: BoxDecoration(
-                color: Color.fromARGB(30, 0, 0, 0),
+                color: Color.fromARGB(255, 255, 255, 255),
                 border: Border.all(
-                  color: Colors.brown,
+                  color: Colors.green,
                   width: 2,
                 ),
-                borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(15),
-                  topLeft: Radius.circular(15),
-                ),
+                borderRadius: BorderRadius.all(Radius.circular(5)),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black,
@@ -30,11 +27,16 @@ class Screen1 extends StatelessWidget {
                     blurRadius: 3,
                   ),
                 ]),
-            child: Text('Hola guapo' * 10),
-            padding: EdgeInsets.all(10),
+            child: Center(
+              child: Text('Hola guapo',
+                  style: TextStyle(
+                    color: Colors.black,
+                  )),
+            ),
+            padding: EdgeInsets.all(5),
             constraints: BoxConstraints(
               maxWidth: 100,
-              minHeight: 100,
+              maxHeight: 100,
             ),
           ),
         ),
